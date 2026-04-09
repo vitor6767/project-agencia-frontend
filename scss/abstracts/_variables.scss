@@ -1,0 +1,135 @@
+@use "sass:map";
+
+// -----------------------------------------------------------------------------
+// design tokens organized as maps and variables for compatibility
+// -----------------------------------------------------------------------------
+
+// color palette map
+$colors: (
+  "background": hsl(210, 38%, 96%),
+  "foreground": hsl(210, 25%, 10%),
+  "muted-foreground": hsl(210, 10%, 45%),
+  "primary": hsl(207, 90%, 45%),
+  "primary-light": hsl(207, 80%, 65%),
+  "primary-dark": hsl(207, 90%, 30%),
+  "primary-foreground": hsl(0, 0%, 100%),
+  "secondary": hsl(40, 100%, 88%),
+  "secondary-foreground": hsl(210, 25%, 15%),
+  "accent": hsl(174, 70%, 55%),
+  "accent-foreground": hsl(210, 25%, 10%),
+  "border": hsl(210, 30%, 88%),
+
+  // repeated overlays and extra tokens
+  "navbar-bg": hsla(210,40%,98%,0.8),
+  "navbar-bg-light": hsla(210,40%,98%,0.95),
+  "navbar-border": hsla(210,30%,90%,0.5),
+  "hover-bg": hsla(210,100%,40%,0.1),
+  "overlay-start": hsla(210,100%,25%,0.4),
+  "overlay-end": hsla(210,100%,40%,0.6),
+  "white-05": hsla(0,0%,100%,0.05),
+  "white-04": hsla(0,0%,100%,0.041),
+  "white-10": hsla(0,0%,100%,0.1),
+  "white-20": hsla(0,0%,100%,0.2),
+  "white-30": hsla(0,0%,100%,0.3),
+  "white-50": hsla(0,0%,100%,0.5),
+  "white-60": hsla(0,0%,100%,0.6),
+  "white-70": hsla(0,0%,100%,0.7),
+  "white-80": hsla(0,0%,100%,0.8)
+);
+
+// gradients (some rely on colors above)
+$gradient-ocean: linear-gradient(135deg, map.get($colors, "primary-dark"), map.get($colors, "primary-light"));
+$gradient-text: linear-gradient(to right, map.get($colors, "accent"), map.get($colors, "primary-light"));
+
+// shadows map
+$shadows: (
+  "float": 0 5px 20px -5px hsla(210, 60%, 40%, 0.25),
+  "wave":  0 10px 40px -10px hsla(207, 85%, 35%, 0.35),
+  "card":  0 8px 24px rgba(17, 24, 39, 0.06),
+  "focus": 0 6px 18px rgba(43,155,215,0.08),
+  "toast": 0 6px 18px rgba(0,0,0,0.08),
+  "hero-hover": 0 20px 60px -10px hsla(210, 100%, 25%, 0.5),
+  "btn-primary": 0 4px 15px -5px map.get($colors, "primary")
+);
+
+// spacing scale
+$spacing: (
+  "xs": 0.25rem,
+  "sm": 0.5rem,
+  "md": 1rem,
+  "lg": 1.5rem,
+  "xl": 2rem
+);
+
+// font-size scale
+$font-sizes: (
+  "xs": 0.875rem,
+  "label": 0.95rem,
+  "sm": 1rem,
+  "button": 1.125rem,
+  "md": 1.25rem,
+  "lg": 1.5rem,
+  "xl": 2.5rem,
+  "xxl": 3rem,
+  "xxxl": 4.5rem
+);
+
+// border radius scale
+$border-radius: (
+  "small": 0.5rem,
+  "medium": 0.75rem,
+  "large": 1rem,
+  "pill": 9999px
+);
+
+// breakpoints map
+$breakpoints: (
+  "md": 768px,
+  "lg": 1024px
+);
+
+// z-index tokens
+$z-indices: (
+  "background": 0,
+  "overlay": 10,
+  "navbar": 50,
+  "toast": 9999
+);
+
+// single-value aliases for backward compatibility
+$background: map.get($colors, "background");
+$foreground: map.get($colors, "foreground");
+$muted-foreground: map.get($colors, "muted-foreground");
+$primary: map.get($colors, "primary");
+$primary-light: map.get($colors, "primary-light");
+$primary-dark: map.get($colors, "primary-dark");
+$primary-foreground: map.get($colors, "primary-foreground");
+$secondary: map.get($colors, "secondary");
+$secondary-foreground: map.get($colors, "secondary-foreground");
+$accent: map.get($colors, "accent");
+$accent-foreground: map.get($colors, "accent-foreground");
+$border-color: map.get($colors, "border");
+
+// shadows aliases
+$shadow-float: map.get($shadows, "float");
+$shadow-wave: map.get($shadows, "wave");
+
+// spacing aliases
+$spacing-xs: map.get($spacing, "xs");
+$spacing-sm: map.get($spacing, "sm");
+$spacing-md: map.get($spacing, "md");
+$spacing-lg: map.get($spacing, "lg");
+$spacing-xl: map.get($spacing, "xl");
+
+// border-radius aliases
+$radius-small: map.get($border-radius, "small");
+$radius-medium: map.get($border-radius, "medium");
+$radius-large: map.get($border-radius, "large");
+$radius-pill: map.get($border-radius, "pill");
+
+// breakpoints aliases
+$breakpoint-md: map.get($breakpoints, "md");
+$breakpoint-lg: map.get($breakpoints, "lg");
+
+// utility variables
+$transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

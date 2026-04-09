@@ -1,0 +1,69 @@
+# Projeto Agência — Front-end
+
+Projeto Front-end desenvolvido a partir de um layout base criado no Figma,
+com o objetivo de construir um site institucional para uma agência fictícia.
+
+O foco do projeto foi transformar o design em código funcional,
+utilizando HTML e CSS, aplicando conceitos de layout, organização visual
+e responsividade.
+
+## Contexto do projeto
+
+A página inicial foi desenvolvida com base em um layout previamente definido
+no Figma. A partir disso, outras seções e páginas foram adaptadas e
+construídas utilizando código próprio e reaproveitamento de estruturas já conhecidas.
+
+Durante o desenvolvimento, algumas funcionalidades em JavaScript
+foram implementadas com auxílio de ferramentas automáticas,
+com foco apenas na integração e funcionamento básico.
+
+## Minhas responsabilidades
+
+- Implementação do layout a partir do Figma
+- Estruturação do HTML semântico
+- Estilização completa com CSS
+- Ajustes de responsividade
+- Organização visual e hierarquia de informações
+- Integração de scripts JavaScript básicos (com auxílio)
+
+## O que aprendi com o projeto
+
+- Leitura e interpretação de layouts no Figma
+- Transformação de design em código
+- Organização de arquivos Front-end
+- Criação de layouts responsivos
+- Melhoria de consistência visual entre páginas
+- Uso consciente de ferramentas de apoio ao desenvolvimento
+
+## Tecnologias utilizadas
+
+- HTML5
+- **Sass (SCSS)** para estilização modular e tokens
+- CSS3 (gerado automaticamente)
+- JavaScript (uso básico)
+
+## Observações
+
+Este projeto tem caráter educacional e representa meu processo
+de aprendizado em desenvolvimento Front-end.
+
+### Nota sobre estilos
+O diretório `/scss` agora é a **única** fonte de estilos editável. A pasta
+`/css` contém apenas o arquivo compilado (`main.css`) e é regenerada pelo
+Sass.
+
+Para compilar os estilos execute:
+
+```sh
+sass --watch scss:css
+```
+
+ou use sua ferramenta de build preferida. Não edite diretamente os arquivos
+CSS.
+
+---
+
+
+---
+
+Projeto desenvolvido com foco em prática e evolução técnica.

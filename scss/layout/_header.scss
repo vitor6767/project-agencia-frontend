@@ -1,0 +1,106 @@
+@use "../abstracts/index" as *;
+
+// header / navbar styles
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: z-index(navbar);
+  background: color("navbar-bg");
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid color("navbar-border");
+
+  .container {
+    @include flex-center(row, space-between, center);
+  }
+
+  .nav-links {
+    display: none;
+    align-items: center;
+    gap: $spacing-lg;
+
+    .btn { margin-left: $spacing-md; }
+  }
+
+  .nav-item {
+    font-size: font-size(xs);
+    font-weight: 500;
+    color: $muted-foreground;
+    transition: color 0.2s;
+
+    &:hover,
+    &.active { color: $primary; }
+  }
+
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    svg { height: 1.5rem; width: 1.5rem; }
+  }
+
+  // mobile menu
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    padding: $spacing-md;
+    background: color("navbar-bg-light");
+    backdrop-filter: blur(10px);
+    border-top: 1px solid color("navbar-border");
+
+    .mobile-nav-item {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-weight: 500;
+      border-radius: 0.375rem;
+      color: $muted-foreground;
+      transition: $transition-smooth;
+
+      &:hover,
+      &.active {
+        background-color: color("hover-bg");
+        color: $primary;
+      }
+    }
+
+    .mobile-btn-outline { /* styles moved to buttons */ }
+    .mobile-btn-primary { /* moved to buttons */ }
+  }
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: $spacing-sm;
+    text-decoration: none;
+
+    .logo-icon {
+      padding: $spacing-sm;
+      background: $gradient-ocean;
+      border-radius: $radius-pill;
+      transition: transform 0.3s ease;
+
+      &:hover { transform: scale(1.1); }
+
+      svg {
+        color: $primary-foreground;
+        height: 1.5rem;
+        width: 1.5rem;
+      }
+    }
+
+    .logo-text {
+      font-size: font-size(md);
+      font-weight: 700;
+      background: $background;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .nav-links { display: flex; }
+  .menu-toggle { display: none; }
+}

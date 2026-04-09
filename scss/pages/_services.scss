@@ -1,0 +1,50 @@
+@use "../abstracts/index" as *;
+
+// services page styles (used on multiple pages)
+
+.services-section {
+  background: linear-gradient(
+    to bottom,
+    $background,
+    hsla(184, 100%, 85%, 0.2)
+  );
+}
+
+.services-header {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  .services-title {
+    font-size: font-size(xl);
+    font-weight: 700;
+    background: $gradient-ocean;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1rem;
+  }
+
+  .services-subtitle {
+    font-size: font-size(md);
+    color: $muted-foreground;
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.services-grid {
+  @include simple-grid(repeat(2, 1fr), $spacing-lg);
+  margin-bottom: 4rem;
+}
+
+/* small screen adjustments (already handled elsewhere via respond-to) */
+@include respond-to(md) {
+  .services-grid { grid-template-columns: 1fr; }
+  .service-info-grid { grid-template-columns: 1fr; }
+  .service-image-container { aspect-ratio: 16 / 9; height: auto; }
+  .service-title { font-size: font-size(md); }
+}
+
+@include respond-to(lg) {
+  .services-title { font-size: font-size(xxl); }
+}

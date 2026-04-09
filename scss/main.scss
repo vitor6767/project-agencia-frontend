@@ -1,0 +1,32 @@
+// central import file for project scss
+
+// abstracts (variables, mixins, functions)
+@use "abstracts/index" as *;
+
+// base styles
+@use "base/reset";
+@use "base/typography";
+@use "base/base";
+
+// components
+@use "components/buttons";
+@use "components/cards";
+@use "components/forms";
+@use "components/icons";
+
+// layout
+@use "layout/header";
+@use "layout/footer";
+@use "layout/grid";
+@use "layout/navigation";
+
+// pages
+@use "pages/home";
+@use "pages/about";
+@use "pages/services";
+
+// themes
+@use "themes/theme";
+
+// vendors
+@use "vendors/bootstrap-overrides";

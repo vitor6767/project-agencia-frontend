@@ -1,0 +1,10 @@
+@use "../abstracts/index" as *;
+
+// reusable grid utilities
+
+.grid {
+  display: grid;
+  gap: $spacing-lg;
+}
+
+// specific multiples still declared in page/component partials

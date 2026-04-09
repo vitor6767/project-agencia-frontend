@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Hospedagem na Ilha Grande | Pousadas, Chalés e Casas</title>
+  
+ <!-- Content Security Policy (CSP) para segurança -->
+    <meta http-equiv="Content-Security-Policy"
+    content="
+    default-src 'self';
+    script-src 'self';
+    style-src 'self' 'unsafe-hashes' 'sha256-xD7Q+F1r8e5j8E8nWkP7R0zJ7lY7qY1YxZq8xkZ9kKs=';
+    img-src 'self' data: https://wa.me;
+    font-src 'self';
+    frame-ancestors 'none';"
+    >
+
+
+
+  <meta name="description"
+    content="Hospedagem na Ilha Grande com pousadas, chalés e casas confortáveis para uma estadia perfeita." />
+  <meta name="keywords"
+    content="hospedagem Ilha Grande, pousadas Ilha Grande, chalés Ilha Grande, casas para temporada Ilha Grande" />
+
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+
+
+  <!-- Favicon -->
+    <link rel="icon" href="./Assets/imagens/logo-icon2.jpeg" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="navbar">
+  <div class="container">
+    <a href="./index.html">
+      <img src="./assets/imagens/logo.png" width="96" style="padding: 8px 0" alt="Logo Aventuras" />
+    </a>
+
+    <div class="nav-links">
+      <a href="./index.html" class="nav-item">Início</a>
+      <a href="./passeios.html" class="nav-item">Passeios</a>
+      <a href="./hospedagem.html" class="nav-item active">Hospedagem</a>
+      <a href="./about.html" class="nav-item">Sobre Nós</a>
+      <a href="./login.html" class="nav-item">Entrar</a>
+      <a href="./cadastro.html" class="nav-item">Criar conta</a>
+    </div>
+
+    <button class="menu-toggle" aria-label="Abrir menu de navegação">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor"
+        stroke-width="2">
+        <line x1="4" x2="20" y1="12" y2="12" />
+        <line x1="4" x2="20" y1="6" y2="6" />
+        <line x1="4" x2="20" y1="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu">
+    <a href="./index.html" class="mobile-nav-item ">Início</a>
+    <a href="./passeios.html" class="mobile-nav-item">Passeios</a>
+    <a href="./hospedagem.html" class="mobile-nav-item active">Hospedagem</a>
+    <a href="./about.html" class="mobile-nav-item">Sobre</a>
+    <a href="./login.html" class="mobile-nav-item">Entrar</a><!--aq antes tinha o mobile-btn-outline-->
+    <a href="./cadastro.html" class="mobile-nav-item">Criar conta</a><!--aq antes tinha o mobile-btn-primary-->
+  </div>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="hero-section">
+  <div class="hero-background"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="64"
+            height="64"
+            viewBox="0 0 64 64"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            >
+            <!-- Telhado -->
+            <path d="M2 32 L32 4 L62 32" />
+            <!-- Estrutura da casa -->
+            <rect x="12" y="32" width="40" height="28" />
+            <!-- Porta -->
+            <rect x="28" y="42" width="8" height="18" />
+            <!-- Janela esquerda -->
+            <rect x="16" y="38" width="8" height="8" />
+            <!-- Janela direita -->
+            <rect x="40" y="38" width="8" height="8" />
+        </svg>
+
+      <span>Costa Verde - Rio de Janeiro</span>
+    </div>
+
+    <h1 class="hero-heading">
+      Hospedagens
+      <span class="gradient-text">Confortáveis</span>
+      na Ilha Grande
+    </h1>
+
+    <p class="hero-subtitle">
+      Encontre pousadas, chalés e casas completas para uma estadia confortável
+      e inesquecível na Ilha Grande.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#hospedagens" class="btn-hero">Ver Hospedagens</a>
+    </div>
+  </div>
+</section>
+
+<!-- HOSPEDAGENS -->
+<section class="services-section">
+  <div class="container">
+
+    <div class="services-header">
+      <h2 class="services-title" id="hospedagens">Nossas Hospedagens</h2>
+      <p class="services-subtitle">
+        Escolha a hospedagem ideal para sua estadia na Ilha Grande,
+        com conforto, ótima localização e excelente custo-benefício.
+      </p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- CARD 1 -->
+      <div class="service-card">
+        <div class="service-image-container">
+          <img src="./assets/imagens/service/casa2.jpg" alt="Pousada Vista do Mar" class="service-image">
+        </div>
+
+        <div class="service-content">
+          <div class="service-title-container">
+            <h3 class="service-title">Pousada Vista do Mar</h3>
+            <span class="service-price">A partir de R$ 400/noite</span>
+          </div>
+
+          <p class="service-description">
+            Pousada aconchegante com café da manhã incluso e vista privilegiada para o mar.
+          </p>
+
+          <div class="service-info-grid">
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              <span>4-8 hóspedes</span>
+            </div>
+
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-coffee">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                <line x1="6" y1="2" x2="6" y2="4"/>
+                <line x1="10" y1="2" x2="10" y2="4"/>
+                <line x1="14" y1="2" x2="14" y2="4"/>
+              </svg>
+              <span>refeição</span>
+            </div>
+            
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-wifi">
+                <path d="M5 13a10 10 0 0 1 14 0"/>
+                <path d="M8.5 16.5a5 5 0 0 1 7 0"/>
+                <path d="M12 20h.01"/>
+                </svg>
+              <span>Wi-Fi</span>
+            </div>
+          </div>
+
+          <div class="service-highlights">
+            <div class="highlight-badges">
+              <span>Vista para o mar</span>
+              <span>Café incluso</span>
+              <span>Ar-condicionado</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-secondary">
+            Ver Hospedagem
+          </a>
+        </div>
+      </div><!--fim card 1-->
+
+      <!-- CARD 2 -->
+      <div class="service-card">
+        <div class="service-image-container">
+          <img src="./assets/imagens/service/chale.jpg" alt="Chalé Familiar" class="service-image">
+        </div>
+
+        <div class="service-content">
+          <div class="service-title-container">
+            <h3 class="service-title">Chalé Familiar</h3>
+            <span class="service-price">A partir de R$ 450/noite</span>
+          </div>
+
+          <p class="service-description">
+            Chalé completo ideal para famílias, com cozinha equipada e varanda.
+          </p>
+
+          <div class="service-info-grid">
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              <span>Até 6 pessoas</span>
+            </div>
+
+            
+            <div class="info-item">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-coffee">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                <line x1="6" y1="2" x2="6" y2="4"/>
+                <line x1="10" y1="2" x2="10" y2="4"/>
+                <line x1="14" y1="2" x2="14" y2="4"/>
+              </svg>
+              <span>Cozinha completa</span>
+            </div>
+
+             <div class="info-item">
+               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-wifi">
+                <path d="M5 13a10 10 0 0 1 14 0"/>
+                <path d="M8.5 16.5a5 5 0 0 1 7 0"/>
+                <path d="M12 20h.01"/>
+                </svg>
+              <span>Wi-Fi</span>
+            </div>
+          </div>
+
+          <div class="service-highlights">
+            <div class="highlight-badges">
+              <span>Varanda</span>
+              <span>Privacidade</span>
+              <span>Ambiente familiar</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-secondary">
+            Ver Hospedagem
+          </a>
+        </div>
+      </div> <!--fim card2-->
+
+      <!-- CARD 3 -->
+      <div class="service-card">
+        <div class="service-image-container">
+          <img src="./assets/imagens/service/casa.jpg" alt="Casa para Temporada" class="service-image">
+        </div>
+
+        <div class="service-content">
+          <div class="service-title-container">
+            <h3 class="service-title">Casa para Temporada</h3>
+            <span class="service-price">A partir de R$ 480/noite</span>
+          </div>
+
+          <p class="service-description">
+            Casa completa para grupos, com área externa, cozinha equipada e ótima localização.
+          </p>
+
+          <div class="service-info-grid">
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-users">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                <circle cx="9" cy="7" r="4"/>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              <span>Até 8 pessoas</span>
+            </div>
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="5"/>
+                <line x1="12" y1="1" x2="12" y2="3"/>
+                <line x1="12" y1="21" x2="12" y2="23"/>
+                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                <line x1="1" y1="12" x2="3" y2="12"/>
+                <line x1="21" y1="12" x2="23" y2="12"/>
+                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+              <span>Área externa</span>
+            </div>
+
+            <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-coffee">
+                <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                <line x1="6" y1="2" x2="6" y2="4"/>
+                <line x1="10" y1="2" x2="10" y2="4"/>
+                <line x1="14" y1="2" x2="14" y2="4"/>
+              </svg>
+              <span>refeição</span>
+            </div>
+
+          </div>
+
+          <div class="service-highlights">
+            <div class="highlight-badges">
+              <span>Espaço amplo</span>
+              <span>Cozinha equipada</span>
+              <span>Ideal para grupos</span>
+            </div>
+          </div>
+
+          <a href="#" class="btn btn-secondary">
+            Ver Hospedagem
+          </a>
+        </div>
+      </div><!--fim card 3-->
+
+        <!--inicio card 4-->
+      <div class="service-card">
+        <div class="service-image-container">
+          <img src="./assets/imagens/service/hotel.jpg" alt="Hotel Costa Verde" class="service-image">
+        </div>
+
+        <div class="service-content">
+          <div class="service-title-container">
+            <h3 class="service-title">Hotel Costa Verde</h3>
+            <span class="service-price">A partir de R$ 350/noite</span>
+          </div>
+
+          <p class="service-description">
+            Hotel cercado pela Mata Atlântica, próximo à praia, ideal para quem busca tranquilidade,
+            natureza e conforto na Costa Verde.
+          </p>
+
+          <div class="service-info-grid">
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-users">
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                <span>Até 3 pessoas</span>
+              </div>
+
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="5"/>
+                  <line x1="12" y1="1" x2="12" y2="3"/>
+                  <line x1="12" y1="21" x2="12" y2="23"/>
+                  <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                  <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                  <line x1="1" y1="12" x2="3" y2="12"/>
+                  <line x1="21" y1="12" x2="23" y2="12"/>
+                  <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                  <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                </svg>
+                <span>Vista para natureza</span>
+              </div>
+
+              <div class="info-item">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                  fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  class="lucide lucide-coffee">
+                  <path d="M17 8h1a4 4 0 1 1 0 8h-1"/>
+                  <path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/>
+                  <line x1="6" y1="2" x2="6" y2="4"/>
+                  <line x1="10" y1="2" x2="10" y2="4"/>
+                  <line x1="14" y1="2" x2="14" y2="4"/>
+                </svg>
+                <span>Café da manhã artesanal</span>
+              </div>
+          </div>
+
+            <div class="service-highlights">
+              <div class="highlight-badges">
+                <span>Próximo à praia</span>
+                <span>Contato com a natureza</span>
+                <span>Ambiente tranquilo</span>
+              </div>
+            </div>
+
+            <a href="#" class="btn btn-secondary">
+              Ver hospedagem
+            </a>
+        </div>
+      </div><!--fim card 4-->
+
+    </div>
+  </div><!--fim-->
+</section>
+
+</main>
+
+ <!--inicio footer-->
+
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-brand">
+                    <div class="logo">
+                         <a href="./index.html">
+                <img src="./assets/imagens/logo-white.png" width="96" />
+              </a>
+                    </div>
+                    <p class="p-footer">
+                        Especialistas em turismo marítimo na Região de Costa Verde.
+                        Oferecemos experiências únicas e seguras para toda a família.
+                    </p>
+                    <div class="social-links">
+    <a href="https://www.instagram.com/" 
+        aria-label="Siga-nos no Instagram" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+        </svg>
+    </a>
+    <a  href="https://www.facebook.com/" 
+        aria-label="Curta nossa página no Facebook" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+    </a>
+    <a href="https://wa.me/5521995473186?text=Olá%20quero%20mais%20informações" 
+        aria-label="Fale conosco no WhatsApp" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <nav>
+                        <a href="./index.html">Início</a>
+                        <a href="./passeios.html">Passeios</a>
+                        <a href="./about.html">Sobre Nós</a>
+                        <a href="./login.html">login</a>
+                        <a href="./cadastro.html">Criar conta</a>
+                    </nav>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <p>Ilha Grande, RJ<br />Costa Verde</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04A19.79 19.79 0 0 1 2 4.18V2.32a2 2 0 0 1 2-2h3.9a2 2 0 0 1 2 2.36 10.64 10.64 0 0 0 2 5.09a2 2 0 0 1 .59 2.11l-.81.81a15.8 15.8 0 0 0 6.13 6.13l.81-.81a2 2 0 0 1 2.11.59 10.64 10.64 0 0 0 5.09 2z"/></svg>
+                        <p>(21) 99547-3186</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                        <p>contato@AgenciaRival.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="year"></span> Agência Rival.
+                    Todos os direitos reservados.
+                </p>
+                <div class="footer-legal-links">
+                     <a href="politica de privacidade.html">Política de Privacidade</a>
+                    <a href="termos de uso.html">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+  
+    <script type="module" src="./js/main.js" defer></script>
+
+    <!--fim footer-->
+</body>
+</html>

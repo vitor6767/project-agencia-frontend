@@ -1,0 +1,28 @@
+@use "../abstracts/index" as *;
+
+// navigation-specific classes (used by header)
+
+.nav-item {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: $muted-foreground;
+  transition: color 0.2s;
+
+  &:hover,
+  &.active { color: $primary; }
+}
+
+.mobile-nav-item {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  color: $muted-foreground;
+  transition: $transition-smooth;
+
+  &:hover,
+  &.active {
+    background-color: color("hover-bg");
+    color: $primary;
+  }
+}

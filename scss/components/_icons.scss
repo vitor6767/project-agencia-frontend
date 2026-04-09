@@ -1,0 +1,43 @@
+@use "../abstracts/index" as *;
+
+// icon sizing helpers and overlays
+
+.social-links a svg,
+.service-icon-overlay svg {
+  height: 1.25rem;
+  width: 1.25rem;
+}
+
+.service-icon-overlay svg {
+  /* color left to component using it */
+}
+
+.service-rating-overlay svg {
+  height: 1rem;
+  width: 1rem;
+  color: hsl(48, 100%, 65%);
+}
+
+.logo-icon svg {
+  color: $primary-foreground;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.feature-item svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: $accent;
+}
+
+.service-icon-overlay svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: white;
+}
+
+.service-rating-overlay svg {
+  height: 1rem;
+  width: 1rem;
+  color: hsl(48, 100%, 65%);
+}

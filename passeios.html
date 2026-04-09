@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+    <head> 
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Aventuras na Ilha Grande - Passeios de Escuna e Lancha na Região da Ilha Grande</title>
+
+            <!-- Content Security Policy (CSP) para segurança -->
+            <meta http-equiv="Content-Security-Policy"
+            content="
+            default-src 'self';
+            script-src 'self';
+            style-src 'self' 'unsafe-hashes' 'sha256-xD7Q+F1r8e5j8E8nWkP7R0zJ7lY7qY1YxZq8xkZ9kKs=';
+            img-src 'self' data: https://wa.me;
+            font-src 'self';
+            frame-ancestors 'none';"
+            >
+
+
+
+        <meta name="description" content="Descubra as praias mais paradisíacas na Região da Ilha Grande com nossos passeios exclusivos de escuna e lancha. Aventuras inesquecíveis no mar para toda a família." />
+        <meta name="keywords" content="passeios de escuna, passeios de lancha, Ilha Grande, Praia da Baleia, Praia de Japariz, Lagoa Azul, Freguesia de Santana, turismo marítimo, passeios de barco" />
+        <meta name="author" content="Paulo Vitor Gomes De Souza,Agência Rival" />
+       
+
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
+
+        <!-- Favicon -->
+        <link rel="icon" href="./Assets/imagens/logo-icon2.jpeg" type="image/x-icon">
+  
+        
+
+    </head>
+
+    <body>
+         <header class="navbar">
+  <div class="container">
+    <a href="./index.html">
+      <div class="container">
+        <img src="./assets/imagens/logo.png" width="96" style="padding: 8px 0" alt="Logo Aventuras" />
+      </div>
+    </a>
+    <div class="nav-links">
+      <a href="./index.html" class="nav-item">Início</a>
+      <a href="./passeios.html" class="nav-item active">Passeios</a>
+      <a href="./hospedagem.html" class="nav-item">Hospedagem</a>
+      <a href="./about.html" class="nav-item">Sobre Nós</a>
+      <a href="./login.html" class="nav-item">Entrar</a><!--aq antes tinha o btn btn-outline-->
+      <a href="./cadastro.html" class="nav-item">Criar conta</a><!--aq antes tinha o btn btn-primary-->
+    </div>
+    <button class="menu-toggle" aria-label="Abrir menu de navegação">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu">
+        <line x1="4" x2="20" y1="12" y2="12" />
+        <line x1="4" x2="20" y1="6" y2="6" />
+        <line x1="4" x2="20" y1="18" y2="18" />
+      </svg>
+    </button>
+  </div>
+  <div class="mobile-menu">
+    <a href="./index.html" class="mobile-nav-item">Início</a>
+    <a href="./passeios.html" class="mobile-nav-item active">Passeios</a>
+    <a href="./hospedagem.html" class="mobile-nav-item">Hospedagem</a>
+    <a href="./about.html" class="mobile-nav-item">Sobre</a>
+    <a href="./login.html" class="mobile-nav-item">Entrar</a><!--aq antes tinha o mobile-btn-outline-->
+    <a href="./cadastro.html" class="mobile-nav-item">Criar conta</a><!--aq antes tinha o mobile-btn-primary-->
+  </div>
+</header>
+
+    <main>
+        <!--inicio section hero-->
+        <section class="hero-section">
+
+            <div class="hero-background"></div>
+                <div class="hero-content">
+                    <div class="hero-badge">
+                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="lucide lucide-waves">
+                        <path d="M2 6c1.5 1 4.5 1 6 0s4.5-1 6 0 4.5 1 6 0"/>
+                        <path d="M2 12c1.5 1 4.5 1 6 0s4.5-1 6 0 4.5 1 6 0"/>
+                        <path d="M2 18c1.5 1 4.5 1 6 0s4.5-1 6 0 4.5 1 6 0"/>
+                        </svg>
+                        <span>Costa Verde - Rio de Janeiro</span>
+                    </div>
+                    <h1 class="hero-heading">
+                        Passeios
+                        <span class="gradient-text">Inesquecíveis</span>
+                        no Mar
+                    </h1>
+                    <p class="hero-subtitle">
+                        Explore as praias mais paradisíacas da Região da Ilha Grande em nossos passeios exclusivos de escuna e lancha. Viva momentos inesquecíveis cercado por paisagens de tirar o fôlego.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#passeios" class="btn-hero">ver passeios</a>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shield"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <span>100% Seguro</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user"><path d="M12 14c-4 0-6 2-6 4v1h12v-1c0-2-2-4-6-4z"/><circle cx="12" cy="8" r="3.5"/></svg>
+                            <span>Grupos Privados</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>Pontos Exclusivos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="scroll-indicator">
+                    <div class="scroll-box">
+                        <div class="scroll-line"></div>
+                    </div>
+                </div>
+
+        </section>
+      <!--fim section hero-->
+
+      <!--inicio services section-->
+
+      <section class="services-section">
+            <div class="container">
+                <div class="services-header">
+                    <h2 class="services-title" id="passeios">Nossos Passeios</h2>
+                    <p class="services-subtitle">
+                        Escolha entre nossas opções exclusivas de passeios marítimos e viva momentos únicos 
+                        nas mais belas praias da Região dos Lagos
+                    </p>
+                </div>
+
+                <!-- 1nd card -->
+
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-image-container">
+                            <img src="./assets/imagens/service/escuna-boat.jpg" alt="Passeios de Escuna" class="service-image">
+                            <div class="service-icon-overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-anchor"><line x1="12" x2="12" y1="2" y2="22"/><path d="M5 12H2a10 10 0 0 0 20 0h-3"/><path d="M18 5a2 2 0 1 0 0 4"/><path d="M6 5a2 2 0 1 0 0 4"/></svg>
+                            </div>
+                            <div class="service-rating-overlay">
+                                <!--svg star-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <!--fim svg star-->
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title-container">
+                                <h3 class="service-title">Passeios de Escuna</h3>
+                                <span class="service-price">A partir de R$ 120</span>
+                            </div>
+                            <p class="service-description">Navegue pelas águas cristalinas em nossas escunas confortáveis e seguras.</p>
+                            <div class="service-info-grid">
+                                <div class="info-item">
+                                    <!-- svg clock -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <!-- fim svg clock -->
+                                    <span>4-6 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <!-- svg user -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                    <!--fim svg user -->
+                                    <span>Até 40 pessoas</span>
+                                </div>
+                            </div>
+                            <div class="service-highlights">
+                                <h4>Destaques:</h4>
+                                <div class="highlight-badges">
+                                    <span> Lagoa Azul</span>
+                                    <span>Praia de Japariz</span>
+                                    <span>Freguesia de Santana</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary"><!--aq tinha o tour passeios-->
+                                Ver Detalhes
+                                <!-- svg camera -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                                <!-- fim svg camera -->
+                            </a>
+                        </div>
+                    </div>
+
+                <!--fim 1nd card--> 
+
+                <!-- 2nd card -->
+
+                    <div class="service-card">
+                        <div class="service-image-container">
+                            <img src="./assets/imagens/service/sunset-tour.jpg" alt="Passeios ao Pôr do Sol" class="service-image">
+                            <div class="service-icon-overlay">
+                                <!-- svg star-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves"><path d="M2 5v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5M10 20h4M12 20V5M17 5v14a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V5"/><path d="M2 19h20M2 5h20M2 11h20"/></svg>
+                                <!-- fim svg star-->
+                            </div>
+                            <div class="service-rating-overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title-container">
+                                <h3 class="service-title">Passeios ao Pôr do Sol</h3>
+                                <span class="service-price">A partir de R$ 200</span>
+                            </div>
+                            <p class="service-description">Momento mágico ao entardecer com vista espetacular e clima romântico.</p>
+                            <div class="service-info-grid">
+                                <div class="info-item">
+                                    <!-- svg clock -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <!-- fim svg clock -->
+                                    <span>2-3 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <!-- svg user -->
+                                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                    <!-- fim svg user -->
+                                    <span>Até 25 pessoas</span>
+                                </div>
+                            </div>
+                            <div class="service-highlights">
+                                <h4>Destaques:</h4>
+                                <div class="highlight-badges">
+                                    <span>Momento romântico</span>
+                                    <span>Drinks inclusos</span>
+                                    <span>Música ambiente</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">
+                                Ver Detalhes
+                                <!-- svg camera -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                                <!-- fim svg camera -->
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- fim 2nd card -->
+
+                    <!-- 3rd card -->
+
+                     <div class="service-card">
+                        <div class="service-image-container">
+                            <img src="./assets/imagens/service/snorkel-adventure.jpg" alt="Passeios ao Pôr do Sol" class="service-image">
+                            <div class="service-icon-overlay">
+                                <!-- svg star -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves"><path d="M2 5v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5M10 20h4M12 20V5M17 5v14a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V5"/><path d="M2 19h20M2 5h20M2 11h20"/></svg>
+                                <!-- fim svg star -->
+
+                            </div>
+                            <div class="service-rating-overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title-container">
+                                <h3 class="service-title">Snorkel em Águas Cristalinas</h3>
+                                <span class="service-price">A partir de R$ 70 </span>
+                            </div>
+                            <p class="service-description">Mergulhe em águas cristalinas,Com uma vida marinha incrível e momentos inesquecíveis em contato com a natureza.</p>
+                            <div class="service-info-grid">
+                                <div class="info-item">
+                                    <!-- svg clock -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <!-- fim svg clock -->
+                                    <span>2-3 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <!-- svg user -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                    <!-- fim svg user -->
+                                    <span>Até 10 pessoas</span>
+                                </div>
+                            </div>
+                            <div class="service-highlights">
+                                <h4>Destaques:</h4>
+                                <div class="highlight-badges">
+                                    <span>Equipamentos inclusos</span>
+                                    <span>Indição para todas as idades</span>
+                                    <span>Fotos incriveis garantidas</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">
+                                Ver Detalhes
+                                <!--svg camera-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                                <!--fim svg camera-->
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--fim 3rd card-->
+                    
+                    <!--inicio 4rd card-->
+
+                     <div class="service-card">
+                        <div class="service-image-container">
+                            <img src="./assets/imagens/service/lancha-family.jpg" alt="Passeios ao Pôr do Sol" class="service-image">
+                            <div class="service-icon-overlay">
+                                <!--svg star-->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-waves"><path d="M2 5v14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V5M10 20h4M12 20V5M17 5v14a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2V5"/><path d="M2 19h20M2 5h20M2 11h20"/></svg>
+                                <!--fim svg star-->
+                            </div>
+                            <div class="service-rating-overlay">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-star"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                        <div class="service-content">
+                            <div class="service-title-container">
+                                <h3 class="service-title">Pesseio Exclusivo</h3>
+                                <span class="service-price">A partir de R$ 350 </span>
+                            </div>
+                            <p class="service-description">Explore águas cristalinas a bordo da nossa lancha Vip, com conforto, exclusividade e vistas inesquecíveis.</p>
+                            <div class="service-info-grid">
+                                <div class="info-item">
+                                    <!-- svg clock -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clock"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                                    <!-- fim svg clock -->
+                                    <span>2-3 horas</span>
+                                </div>
+                                <div class="info-item">
+                                    <!-- svg user -->
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                    class="lucide lucide-users">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                    </svg>
+                                    <!-- fim svg user -->
+                                    <span>Até 8 pessoas</span>
+                                </div>
+                            </div>
+                            <div class="service-highlights">
+                                <h4>Destaques:</h4>
+                                <div class="highlight-badges">
+                                    <span>Conforto Premium</span>
+                                    <span>Paisagens Incriveis</span>
+                                    <span>Experiência Exclusiva</span>
+                                </div>
+                            </div>
+                            <a href="#" class="btn btn-secondary">
+                                Ver Detalhes
+                                <!-- svg camera -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-camera"><path d="M14.5 4h-5L7 7H4a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2h-3z"/><circle cx="12" cy="13" r="3"/></svg>
+                                <!-- fim svg camera -->
+                            </a>
+                        </div>
+                    </div>
+
+                        
+                    <!--fim 4rd card-->
+               
+
+                </div>
+            
+            </div>
+        </section>
+
+      <!--fim services section-->
+
+    </main>
+
+    <!--fim main-->
+
+
+
+    <!--inicio footer-->
+
+ <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <div class="footer-brand">
+                    <div class="logo">
+                         <a href="./index.html">
+                <img src="./assets/imagens/logo-white.png" width="96" />
+              </a>
+                    </div>
+                    <p>
+                        Especialistas em turismo marítimo na Região de Costa Verde.
+                        Oferecemos experiências únicas e seguras para toda a família.
+                    </p>
+                    <div class="social-links">
+    <a href="https://www.instagram.com/" 
+        aria-label="Siga-nos no Instagram" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-instagram">
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
+        </svg>
+    </a>
+    <a  href="https://www.facebook.com/" 
+        aria-label="Curta nossa página no Facebook" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook">
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+        </svg>
+    </a>
+    <a href="https://wa.me/5521995473186?text=Olá%20quero%20mais%20informações" 
+        aria-label="Fale conosco no WhatsApp" 
+        target="_blank" 
+        rel="noopener noreferrer">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle">
+            <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+        </svg>
+    </a>
+</div>
+                </div>
+                <div class="footer-links">
+                    <h3>Links Rápidos</h3>
+                    <nav>
+                        <a href="./index.html">Início</a>
+                        <a href="./passeios.html">Passeios</a>
+                        <a href="./about.html">Sobre Nós</a>
+                        <a href="./login.html">Entrar</a>
+                        <a href="./cadastro.html">Criar conta</a>
+                    </nav>
+                </div>
+                <div class="footer-contact">
+                    <h3>Contato</h3>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <p>Ilha Grande, RJ<br />Costa Verde</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-phone"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6.04-6.04A19.79 19.79 0 0 1 2 4.18V2.32a2 2 0 0 1 2-2h3.9a2 2 0 0 1 2 2.36 10.64 10.64 0 0 0 2 5.09a2 2 0 0 1 .59 2.11l-.81.81a15.8 15.8 0 0 0 6.13 6.13l.81-.81a2 2 0 0 1 2.11.59 10.64 10.64 0 0 0 5.09 2z"/></svg>
+                        <p>(21) 99547-3186</p>
+                    </div>
+                    <div>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                        <p>contato@AgenciaRival.com</p>
+                    </div>
+                </div>
+                <div class="footer-newsletter">
+                    <h3>Novidades exclusivas</h3>
+                    <p>Receba ofertas exclusivas e novidades sobre nossos passeios.</p>
+                    <div class="newsletter-form">
+                        <input type="email" placeholder="Digite seu e-mail">
+                        <button class="btn btn-secondary">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-10 7L2 7"/></svg>
+                            Inscreva-se
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>
+                    © <span id="year"></span> Agência Rival.
+                    Todos os direitos reservados.
+                </p>
+                <div class="footer-legal-links">
+                     <a href="politica de privacidade.html">Política de Privacidade</a>
+                    <a href="termos de uso.html">Termos de Uso</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script type="module" src="./js/main.js" defer></script>
+    
+
+    <!--fim footer-->
+
+
+    </body>
+
+</html>

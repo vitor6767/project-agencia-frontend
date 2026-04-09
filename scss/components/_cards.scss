@@ -1,0 +1,158 @@
+@use "../abstracts/index" as *;
+
+// card-like components
+
+.service-card {
+  border-radius: $radius-large;
+  overflow: hidden;
+  background-color: hsla(0, 0%, 100%, 0.8);
+  backdrop-filter: blur(8px);
+  border: 1px solid color("navbar-border");
+  @include shadow-float;
+  transition: transform 0.5s, box-shadow 0.5s;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  box-sizing: border-box;
+
+  &:hover {
+    transform: scale(1.02);
+    @include shadow-wave;
+
+    .service-image { transform: scale(1.1); }
+  }
+
+  .btn-secondary {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.7s;
+}
+
+.service-image-container {
+  position: relative;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      hsla(0, 0%, 0%, 0.5) 0%,
+      transparent 100%
+    );
+  }
+}
+
+.service-icon-overlay {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: $radius-pill;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+
+  @include flex-center;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.service-rating-overlay {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  @include flex-center(row, center, center, $spacing-xs);
+  background: hsla(0, 0%, 100%, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: $radius-pill;
+  padding: 0.25rem 0.75rem;
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+  color: white;
+  font-size: font-size(xs);
+  font-weight: 500;
+}
+
+.service-content {
+  padding: 1.5rem;
+}
+
+.service-title-container {
+  @include flex-center(row, space-between, center);
+  margin-bottom: 0.5rem;
+}
+
+.service-title {
+  font-size: font-size(lg);
+  font-weight: 700;
+}
+
+.service-price {
+  font-size: font-size(button);
+  font-weight: 600;
+  color: $primary;
+}
+
+.service-description {
+  font-size: font-size(sm);
+  color: $muted-foreground;
+  margin-bottom: 1rem;
+}
+
+.service-info-grid {
+  @include simple-grid(repeat(2, 1fr), $spacing-sm);
+  font-size: font-size(xs);
+  margin-bottom: 1rem;
+}
+
+.info-item {
+  @include flex-center(row, center, center, $spacing-xs);
+}
+
+.service-highlights {
+  margin-bottom: 1rem;
+
+  h4 {
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+}
+
+.highlight-badges {
+  @include flex-center(row, flex-start, center, $spacing-xs);
+  flex-wrap: wrap;
+
+  span {
+    background: hsla(174, 100%, 75%, 0.2);
+    color: $accent-foreground;
+    border-radius: $radius-pill;
+    padding: 0.25rem 0.75rem;
+    font-size: font-size(xs);
+    border: 1px solid hsla(174, 100%, 75%, 0.3);
+  }
+}
+
+.more-tours-cta {
+  text-align: center;
+  padding: 2rem;
+}
+
+.feature-item {
+  @include flex-center(row, center, center, $spacing-sm);
+  padding: 1rem;
+  border-radius: $radius-medium;
+  background: hsla(0, 0%, 100%, 0.041);
+  backdrop-filter: blur(9px);
+  border: 1px solid hsla(0, 0%, 100%, 0.2);
+
+  svg { height: 1.5rem; width: 1.5rem; color: $accent; }
+}

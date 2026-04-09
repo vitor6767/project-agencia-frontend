@@ -1,0 +1,42 @@
+
+
+// mixins for layout patterns
+
+/// Centering flex container with optional gap
+@mixin flex-center($direction: row, $justify: center, $align: center, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: $gap;
+}
+
+/// Reusable container with max-width and horizontal padding
+@mixin container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 spacing(md);
+}
+
+/// Simple grid helper: pass template columns and optional gap
+@mixin simple-grid($cols, $gap: spacing(md)) {
+  display: grid;
+  grid-template-columns: $cols;
+  gap: $gap;
+}
+
+/// Media query helper using breakpoint() function
+@mixin respond-to($breakpoint) {
+  $point: breakpoint($breakpoint);
+  @if $point {
+    @media (min-width: $point) {
+      @content;
+    }
+  } @else {
+    @warn "Unknown breakpoint `#{$breakpoint}`.";
+  }
+}
+
+/// Box shadows
+@mixin shadow-float { box-shadow: shadow(float); }
+@mixin shadow-wave { box-shadow: shadow(wave); }

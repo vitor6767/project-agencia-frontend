@@ -1,0 +1,105 @@
+@use "../abstracts/index" as *;
+
+// form and toast styles
+
+.form-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: shadow(card);
+  padding: 2rem;
+  max-width: 540px;
+  margin: 2.25rem auto;
+
+  h2 {
+    margin: 0 0 1rem 0;
+    font-size: font-size(md);
+  }
+
+  .btn.btn-primary {
+    padding: 0.9rem 1.25rem;
+    border-radius: 10px;
+  }
+}
+
+.auth-form {
+  .form-row {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  label {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: #24303a;
+    font-size: font-size(label);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="tel"],
+  select,
+  textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid #e6eef6;
+    border-radius: 10px;
+    font-size: font-size(sm);
+    background: #fff;
+    transition: border-color .15s ease, box-shadow .15s ease;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  input:focus {
+    outline: none;
+    border-color: #2b9bd7;
+    box-shadow: shadow(focus);
+  }
+
+  .form-row--inline {
+    display: flex;
+    align-items: center;
+    gap: $spacing-md;
+
+    .checkbox {
+      display: flex;
+      align-items: center;
+      gap: $spacing-sm;
+      font-size: font-size(label);
+    }
+  }
+
+  .muted {
+    color: #7a8a94;
+    font-size: font-size(label);
+  }
+}
+
+// Toasts
+.toast-container {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  z-index: z-index(toast);
+}
+.toast {
+  min-width: 220px;
+  max-width: 360px;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  color: #fff;
+  box-shadow: shadow(toast);
+  font-weight: 600;
+}
+.toast--success { background: linear-gradient(90deg,#2bb673,#1fa65a); }
+.toast--error { background: linear-gradient(90deg,#ff6b6b,#ff4c4c); }
+.toast--info { background: linear-gradient(90deg,#2b9bd7,#1b7fb6); }
+
+@media (max-width: 640px) {
+  .form-card { padding: 1.25rem; margin: 1.25rem 1rem; }
+}

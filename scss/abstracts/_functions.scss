@@ -1,0 +1,40 @@
+@use "sass:map";
+@use "variables" as *;
+
+// helper functions for accessing token maps
+
+/// retrieve a color by key
+@function color($key) {
+  // convert identifier or string into plain string
+  @return map.get($colors, "#{$key}");
+}
+
+/// retrieve a spacing value
+@function spacing($size) {
+  @return map.get($spacing, "#{$size}");
+}
+
+/// retrieve a font size
+@function font-size($size) {
+  @return map.get($font-sizes, "#{$size}");
+}
+
+/// retrieve a border radius
+@function radius($size) {
+  @return map.get($border-radius, "#{$size}");
+}
+
+/// retrieve a shadow
+@function shadow($name) {
+  @return map.get($shadows, "#{$name}");
+}
+
+/// retrieve a breakpoint
+@function breakpoint($key) {
+  @return map.get($breakpoints, "#{$key}");
+}
+
+/// retrieve a z-index value
+@function z-index($key) {
+  @return map.get($z-indices, "#{$key}");
+}
